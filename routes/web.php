@@ -104,3 +104,7 @@ Route::middleware('auth')->group(function () {
 // Admin Create Form
 Route::get('admin/create', [AdminController::class, 'create']);
 Route::post('admin/store', [AdminController::class, 'store'])->name('admin.store');
+
+Route::get('/', function () {
+    return 'Laravel is running!';
+});
